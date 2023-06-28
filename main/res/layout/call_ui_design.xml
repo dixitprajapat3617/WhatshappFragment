@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_calls_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/dixitprajapt" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_calls_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/dixit_prajapat"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_calls_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="(2) yesterday, 9.27 pm"
+                android:drawableTint="#02FA0C"
+                android:drawableLeft="@drawable/ic_baseline_arrow_outward_24"
+                android:textSize="18dp" />
+
+
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/cemra_call_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_videocam_24"
+            app:tint="#02FA0C" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
